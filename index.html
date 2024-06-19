@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOK MARK</title>
+    <!-- font style -->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <!-- icon -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- css style -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+ 
+    <div class="container py-4 ">
+     <div class="border-bottom border-black p-4 mb-4 ">
+        <h1 class="m-auto">Bookmarker</h1>
+     </div>
+     <h2 class="h3 m-auto"> 
+     <i class="fa-solid fa-bookmark" style="color: #27683e;"></i>
+        Bookmark your favorite sites
+        <i class="fa-solid fa-bookmark" style="color: #27683e;"></i>
+    </h2>
+    <div class="border-bottom border-black py-4 mb-4">
+        <div class="mb-3 row">
+            <label for="inputName" class="col-sm-4 col-form-label ps-3 fw-semibold">
+                <i class="fa-solid fa-book-bookmark pe-2"></i>
+                Site Name
+            </label>
+            <div class="col-sm-12">
+              <input type="text" class="form-control " id="inputName" placeholder="Bookmark Name" oninput="valid(this)">
+            </div>
+    </div>
+        <div class="mb-3 row">
+            <label for="inputURL" class="col-sm-4 col-form-label ps-3 fw-semibold ">
+                <i class="fa-solid fa-link pe-2"></i>
+                Site URL
+            </label>
+            <div class="col-sm-12">
+              <input type="text" class="form-control " id="inputURL" placeholder="Website URL" oninput="valid(this)">
+            </div>
+    </div>
+    <button class="btn btn-submit py-2 px-5 d-block m-auto" onclick="add()">Submit</button>
+    </div>
+   
+
+
+    <div class="row bg-white p-2 text-center gy-3 mt-2  pb-3">
+        
+        <div class="col-sm-2 fw-bold">Index </div>
+        <div class="col-sm-4 fw-bold">Website Name</div>
+        <div class="col-sm-3 fw-bold">Vist</div>
+        <div class="col-sm-3 fw-bold">Delete</div> 
+    </div>
+ <div class="row bg-white text-center gy-3 pb-3 align-items-baseline" id="row">
+
+ </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+    <!-- js --> 
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
